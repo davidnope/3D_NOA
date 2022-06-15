@@ -1,0 +1,254 @@
+:root {
+    --azul-oscuro: #406B77;
+    --azul-claro: #568E9E;
+    --verde-oscuro: #84BA9B;
+    --verde-claro: #C3D696;
+    --amarillo-claro-1: #EDE9D5;
+    --amarillo-claro-2: #F3F0E2;
+}
+
+/* imagen Header */
+
+.img-fondo {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-image: url('/img/feat-May2019.jpg');
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+
+.search {
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    color: var(--amarillo-claro-1);
+    z-index: 2;
+    width: 95%;
+    max-width: 350px;
+}
+
+.search h2 {
+    font-weight: 500;
+}
+
+.input-search {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.input-search input {
+    border: none;
+    width: 90%;
+    text-decoration: none;
+    outline: 0;
+}
+
+.input-search i {
+    width: 5%;
+}
+
+
+/* categorias */
+
+.category {
+    width: 100%;
+    background-color: var(--azul-claro);
+    display: flex;
+    justify-content: center;
+}
+
+.container-img-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+
+.img-category {
+    background-color: var(--amarillo-claro-2);
+    width: 150px;
+    height: 70px;
+    margin: 40px 0;
+}
+
+/* categorias */
+
+/* usurio-comprador */
+
+.usurio-comprador {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative; 
+}
+
+.container-usurio, .container-comprador{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    box-sizing: border-box;
+    justify-content:space-evenly;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: all .5s;
+}
+
+.container-comprador{
+    margin-top: 50px;
+}
+
+
+.container-usurio:hover{
+    height: 400px;
+}
+.container-comprador:hover{
+    height: 400px;
+}
+
+/* IMAGENES CONTENEDORES DE USUARIOS Y COMPRADOR */
+.img-containers {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+    position: absolute;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.img-usurio{
+    background-image: url('/img/4670240.jpg')
+}
+
+.img-comprador{
+    background-image: url('/img/3509263.jpg')
+}
+/* IMAGENES CONTENEDORES DE USUARIOS Y COMPRADOR */
+
+/* TEXTO CONTENEDORES DE USUARIOS Y COMPRADOR */
+.usurio-comprador h2 {
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+    position: static;
+    z-index: 3;
+    color: var(--amarillo-claro-1);
+    text-shadow: black 0.1em 0.1em 0.3em
+}
+.container-text{
+    text-align: center;
+    position: static;
+    z-index: 3; 
+    color: var(--amarillo-claro-2);
+    text-shadow: black 0.1em 0.1em 0.3em
+}
+
+/* boton */
+.boton{
+    background-color: var(--amarillo-claro-1);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    color: var(--azul-claro);
+    text-decoration: none;
+    z-index: 3;
+    font-weight: bold;
+}
+.boton p{
+    margin: 20px;
+}
+
+/* TEXTO CONTENEDORES DE USUARIOS Y COMPRADOR */
+
+/* CARRUSEL */
+
+.info-carrusel{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #568E9E;
+}
+.info-carrusel h2{
+    text-align: center;
+    width: 100%;
+}
+/* SOLO EL CARRUSEL */
+.carrusel{
+    background-color: #C3D696;
+    width: 90%;
+}
+.contendor-g-carrusel{
+    background-color: #C3D696;
+    width: 200%;
+    max-width: 120em;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.img{
+    width: calc(100% / 2);
+    background-color: red;
+    margin-left: 5px;
+}
+
+.carrusel .puntos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel .punto{
+    width: 1em;
+    height: 1em;
+    margin: 0.5em;
+    border-radius: 20px;
+    background-color: #406B77;
+    list-style: none;
+}
+/* SOLO EL CARRUSEL */
+/* CARRUSEL */
+
+@media (min-width: 768px) {
+    .img-fondo {
+        width: 100%;
+    }
+
+    .search {
+        width: 50%;
+        max-width: 450px;
+    }
+
+} 
+
+@media (min-width: 1024px) {
+
+    /* usurio-comprador */
+    .usurio-comprador {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .container-comprador{
+        margin-top: 0;
+    }
+}
